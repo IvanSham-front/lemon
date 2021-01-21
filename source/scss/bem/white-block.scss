@@ -1,0 +1,34 @@
+.white-block {
+    background-color: $white;
+    box-shadow: 1px 1px 18px 5px rgba(0, 0, 0, 0.21);
+
+}
+
+.white-block__header {
+    @include flex-box(row nowrap, space-between);
+    border-bottom: 1px solid $lightGrey;
+    min-width: 100%;
+}
+
+.white-block__title {
+    font-family: $Josefin;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    color: $black;
+}
+
+.white-block_small {
+    padding: 30px 20px 20px;
+}
+
+.white-block__props {
+    @include flex-box(row nowrap, space-between);
+    min-width: 40%;
+}
+
+.white-block__icons {
+    width: 15px;
+    height: 15px;
+    fill: $greyText;
+}

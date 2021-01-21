@@ -1,0 +1,39 @@
+.popular-now {
+    background-image: url('../img/cofee-cup-background.jpg');
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position-y: 12px;
+}
+.popular-now__content {
+    padding: 30px 20px 20px;
+}
+
+.popular-now__title {
+    font-size: 32px;
+    color: $red;
+    margin-bottom: 33px;
+}
+
+.popular-now__info {
+    color: $black;
+    font-family: $Josefin;
+}
+
+.popular-now__title-small {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.popular-now__text {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.popular-now__btn {
+    float: left;
+    margin-right: 5px;
+}
+
+.popular-now__props {
+    margin-top: 25px;
+}

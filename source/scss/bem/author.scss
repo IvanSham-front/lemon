@@ -1,0 +1,49 @@
+.author__figure {
+    margin-top: 20px;
+    @include flex-box(row nowrap, space-between);
+    align-items: flex-start;
+}
+
+.author__portrait {
+    @include circle;
+}
+
+.author__about {
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    min-width: 290px;
+    border-bottom: 1px solid $lightGrey;
+}
+
+.author__name {
+    color: $black;
+}
+
+.author__social {
+    @include flex-box(row nowrap, space-between);
+    max-width: 110px;
+}
+
+.author__review {
+    max-width: 290px;
+    align-self: flex-end;
+    @include flex-box(column nowrap, space-between);
+    font-style: italic;
+}
+
+.author__text-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: $black;
+}
+
+.author__text {
+    font-size: 14px;
+}
+
+.author__caption {
+    margin-top: 10px;
+    align-self: flex-end;
+}
+

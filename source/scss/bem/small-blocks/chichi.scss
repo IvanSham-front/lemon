@@ -1,0 +1,30 @@
+.chichi {
+    @include flex-box (column nowrap, space-between);
+    align-items: center;
+}
+
+.chichi__inner {
+    margin-bottom: 47px;
+}
+
+.chichi__title {
+    padding: 25px 17px 0;
+    color: $turquoise;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 1px solid $lightGrey; 
+    width: 90%;
+}
+
+.chichi__author {
+    @include flex-box(row nowrap, space-between);
+    margin: 12px 0;
+    font-family: $Josefin;
+}
+
+.chichi__author-portrait {
+    @include circle;
+    margin-right: 20px;
+    width: 56px;
+    height: 56px;
+}

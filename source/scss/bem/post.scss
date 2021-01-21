@@ -1,0 +1,55 @@
+.post {
+    border-bottom: 1px solid $lightGrey;
+}
+.post__figure {
+    @include flex-box(row nowrap, flex-start);
+}
+
+.post__info {
+    @include flex-box (column wrap, flex-start);
+}
+
+.post__portrait {
+    align-self: flex-start;
+    margin-right: 17px;
+    width: 55px;
+    height: 55px;
+}
+
+.post__props {
+    float: right;
+    margin-top: -40px;
+    @include flex-box(row nowrap, space-between);
+    min-width: 85px;
+}
+
+.post__props-share, .post__props-like {
+    color: $greyText;
+    font-size: 12px;
+}
+
+.post__btn {
+    border: none;
+    background-color: inherit;
+}
+
+.post__props-icon {
+    width: 13px;
+    height: 13px;
+    fill: $greyText;
+}
+
+.post__inner {
+    @include flex-box(column nowrap, space-between);
+    margin-top: 17px;
+    padding-left: 55px;
+    align-items: flex-start;
+}
+
+.post__text {
+    margin: 15px 0;
+}
+
+.post__date {
+    color: $blueDate;
+}

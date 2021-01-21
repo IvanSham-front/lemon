@@ -1,0 +1,15 @@
+.btn {
+    border: 1px solid $greyBackground;
+    background-color: $white;   
+    font-size: 12px;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    min-width: 105px;
+    font-family: $Josefin;
+    cursor: pointer;
+    &:hover {
+      color: $lightGrey;  
+      background-color: $greyBtn;
+      transition: 0.5s;  
+    }
+}

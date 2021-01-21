@@ -1,0 +1,13 @@
+.small-blocks {
+    margin: 0 auto;
+    max-width: 1024px;
+    @include flex-box(row nowrap, space-between);
+}
+
+.small-blocks__inner {
+    margin-top: 77px;
+}
+
+.small-blocks__elem {
+    flex-basis: 289px;
+}

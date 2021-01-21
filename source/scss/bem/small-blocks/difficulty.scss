@@ -1,0 +1,14 @@
+.difficulty {
+    margin: 12px auto 28px;
+    @include flex-box(row nowrap, space-between);
+    width: 80%;
+}
+
+.difficulty__a {
+    font-family: $Josefin;
+    font-size: 14px;
+    color: $black;
+    &:hover{
+        font-weight: bold;
+    }
+}

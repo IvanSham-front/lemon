@@ -1,0 +1,19 @@
+.pages {
+    padding: 40px;
+    font-family: $Josefin;
+    font-size: 18px;
+}
+
+.pages__list {
+    @include flex-box(row nowrap, center);
+}
+
+.pages__li {
+    margin: 0 18px;
+}
+
+.pages__item {
+    &:hover {
+        color: $blueDate;
+    }
+}

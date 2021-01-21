@@ -1,0 +1,56 @@
+.post-a-comment {
+    padding: 25px 50px 35px;
+}
+
+.post-a-comment__title {
+    border: none;
+    min-width: inherit;
+    display: inline-block;
+} 
+
+.post-a-comment__links {
+    float: right;
+    @include flex-box(row nowrap, space-between);
+    min-width: 150px;
+}
+
+.post-a-comment__link {
+    color: $black;
+    font-style: italic;
+    font-family: $Josefin;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.post-a-comment__link_fb {
+    &:after {
+        content: '|';
+        margin-left: 15px;
+    }
+}
+
+.post-a-comment__form {
+    @include flex-box (row nowrap, flex-end);
+    padding: 23px 20px;
+    background-color: $lightLightGrey;
+}
+
+
+.post-a-comment__input {
+    min-width: 500px;
+    margin: 0 10px 0 65px;
+}
+
+.post-a-comment__btn {
+    min-width: 85px;
+    max-height: 40px;
+    color: $white;
+    background-color: $greyBtn;
+}
+
+.post-a-comment__portrait {
+    margin-top: -8px;
+    width: 55px;
+    height: 55px;
+}

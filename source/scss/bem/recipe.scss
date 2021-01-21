@@ -1,0 +1,46 @@
+.recipe {
+    @include flex-box (row nowrap, space-between);
+}
+
+.recipe__inner {
+    margin-top: 90px;
+}
+
+.recipe__value {
+    padding: 30px 30px 0;
+}
+
+.recipe__title {
+    font-size: 32px;
+    color: $turquoise
+}
+
+.recipe__props {
+    margin-top: 20px;
+    @include flex-box(row nowrap, flex-start);
+    font-family: $Josefin;
+}
+
+.recipe__time {
+    margin-right: 5px;
+}
+
+.recipe__time-icon {
+    width: 11px;
+    height: 11px;
+}
+
+.recipe__btn {
+    float: right;
+    margin-right: 45px;
+    margin-top: -30px;
+}
+
+.recipe__text {
+    max-width: 515px;
+}
+
+.recipe__p {
+    font-family: $Josefin;
+    margin: 20px 0;
+}

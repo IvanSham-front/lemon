@@ -1,0 +1,57 @@
+.nav {
+    @include flex-box(row nowrap, space-between);
+    @include font(16px, normal);
+}
+
+.nav__footer {
+    font-size: 12px;
+}
+.nav__link_dark {
+    color: $footerText
+}
+
+.nav__inner {
+    margin-top: 120px;
+    margin-bottom: 90px;
+    padding: 40px 94px;
+}
+
+.nav__logo {
+    width: 85px;
+    height: 35px;
+}
+
+.nav__list {
+    padding-top: 10px;
+    @include flex-box(row nowrap, space-between);
+}
+
+.nav__item {
+    margin-left: 25px;
+    &:hover {
+        text-decoration: underline;
+        color: $darkGrey;
+        transition: 0.5s;
+    }
+}
+
+.nav__button-search {
+    width: 165px;
+    padding: 10px 0;
+    font-size: 12px;
+    position: relative;
+}
+
+.nav__search-icon {
+    width: 15px;
+    height: 15px;
+    fill: $lightGrey;
+    transform: scale(-1, 1);
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+
+.nav__logo_footer {
+    margin-right: 65px;
+}

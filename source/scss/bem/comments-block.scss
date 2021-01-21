@@ -1,0 +1,9 @@
+.comments-block {
+    max-width: 840px;
+    margin: 0 auto;
+    @include flex-box(column nowrap, space-between);    
+}
+
+.comments-block__inner {
+    margin-top: 125px;
+}

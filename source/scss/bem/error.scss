@@ -1,0 +1,31 @@
+.error__background {
+    background-image: url('../img/plate.png');
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    padding: 170px 150px 0;
+    @include flex-box(column nowrap, space-between)
+}
+
+.error__btn {
+    align-self: center;
+    margin-top: 10px;
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.error__title_small {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: $black;
+}
+
+.error__p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    font-family: $Playfair;
+}
+
+

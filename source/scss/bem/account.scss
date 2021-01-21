@@ -1,0 +1,62 @@
+.account {
+    @include flex-box (row nowrap, space-between);
+    align-items: flex-start;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.account__inner {
+    margin-top: 100px;
+}
+
+.account__el {
+    flex-basis: 328px;
+    padding: 20px 32px;
+}
+
+.account__el_right {
+    align-self: flex-start;
+}
+
+.account__content {
+    padding-top: 30px;
+    font-family: $Josefin;   
+    @include flex-box(column nowrap, space-between); 
+}
+
+.account__title {
+    font-size: 16px;
+    font-weight: normal;
+    color: $black;
+    margin-bottom: 20px;
+}
+
+.account__list {
+    margin-bottom: 20px;
+}
+
+.account__links {
+    @include flex-box(row nowrap, flex-start);
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+
+.account__checkbox-label {
+    margin-right: 55px;
+}
+
+.account__social {
+    min-width: 75px;
+    margin: 0 auto 20px;
+}
+
+.account__btn {
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.account__foreword {
+    text-align: center;
+    font-style: italic;
+}

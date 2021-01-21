@@ -1,0 +1,21 @@
+.examples {
+    font-family: $Josefin;
+    font-size: 18px;
+    color: $greyText;
+}
+
+.examples__inner {
+    margin-top: 85px;
+    padding: 40px 55px;
+}
+
+.examples__list {
+    @include flex-box(row nowrap, space-between);
+}
+
+.examples__li { 
+    max-width: 315px;
+}
+
+
+

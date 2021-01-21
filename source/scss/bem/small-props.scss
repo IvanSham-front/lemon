@@ -1,0 +1,23 @@
+.small-props {
+    font-size: 12px;
+}
+
+.small-props__span_time {
+    &:after {
+        content: '|';
+        margin-left: 1px;
+    }
+}
+
+.small-props__icon {
+    width: 11px;
+    height: 11px;
+    fill: $greyText;
+    padding-top: 1px;
+}
+
+.small-props__span_comment {
+    margin-left: 4px;
+}
+
+

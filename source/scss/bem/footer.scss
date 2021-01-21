@@ -1,0 +1,26 @@
+.footer {
+    background-color: $darkGrey;
+    font-family: $Josefin;
+    font-size: 12px;
+    color: $footerText;
+    margin-top: 150px;
+}
+
+.footer__inner {
+    padding: 72px 87px 50px;
+    @include flex-box(row nowrap, space-between);
+}
+
+.footer__right-block {
+    @include flex-box (column nowrap, flex-end);
+    margin-top: 8px;
+}
+
+.footer__text {
+    color: $footerText;
+    text-transform: uppercase;
+}
+
+.footer__links {
+    align-self: flex-end;
+}

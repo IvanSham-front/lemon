@@ -1,0 +1,27 @@
+.recipe-small {
+    @include flex-box(column nowrap, space-between);
+    font-family: $Josefin;
+    color: $black;
+  
+}
+
+.recipe-small__list {
+    @include flex-box(column nowrap, space-between);
+    min-height: 260px;
+}
+
+.recipe-small__figure {
+    @include flex-box(row nowrap, space-between);
+}
+
+.recipe-small__img {
+    align-self: flex-start;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.recipe-small__btn {
+    align-self: flex-end;
+    margin-top: 30px;
+}

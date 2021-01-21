@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="preload" href="fonts/josefin-sans-v16-latin-300italic.woff2" as="font">
+    <link rel="preload" href="fonts/josefin-sans-v16-latin-700.woff2" as="font">
+    <link rel="preload" href="fonts/josefin-sans-v16-latin-700italic.woff2" as="font">
+    <link rel="preload" href="fonts/josefin-sans-v16-latin-italic.woff2" as="font">
+    <link rel="preload" href="fonts/josefin-sans-v16-latin-regular.woff2" as="font">
+
+    <link rel="preload" href="fonts/playfair-display-v21-latin-900.woff2" as="font">
+    <link rel="preload" href="fonts/playfair-display-v21-latin-regular.woff2" as="font">
+
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <div class="fixed-container">
+        <header class="header header__inner">
+            <h1 class="title">
+                <picture>
+                    <!-- <source type="image/webp" srcset="img/logo-title.webp 1x, img/logo-title-2x.webp 2x"> -->
+
+                    <img class="logo header__logo" src="img/logo-title.png" srcset="img/logo-title-2x 2x" alt="logo">
+                </picture>
+
+               
+            </h1>    
+                <nav class="nav nav__inner white-block">
+
+                    <img src="img/logo-title.png" srcset="img/logo-title-2x 2x" alt="logo" class="nav__logo">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">HOME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">RECIPES</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">PHOTO GALERIES</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">VIDEOS</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">ALL CATEGORIES</a>
+                        </li>
+                    </ul>
+
+                    <button class="btn nav__button-search" type="search">
+                        <svg class="nav__search-icon">
+                            <use xlink:href="img/sprites/sprite.svg#search"></use>
+                        </svg>
+                        FIND A RECIPE
+                    </button>
+                </nav>
+        </header>
+
+        <main>
+            <section class="slider slider__inner white-block">
+                <img src="img/logo-title.png" srcset="img/logo-title-2x 2x" alt="logo" class="logo slider__logo">
+
+                <ul class="slider__list">
+                    <li class="slider__li">
+                        <div class="slider__item bananas-cake">
+                            <div class="slider__text">
+                                <h2 class="slider__title bananas-cake__title">Bananas Foster Ice Cream Cake</h2>
+    
+                                <p class="slider__p bananas-cake__text">If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly, this cake makes us wonder why Bananas Faster hasn't always been served on top of ice cream cake</p>
+    
+                                <button class="btn slider__btn bananas-cake__button" type="button">GET IT RECIPE</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section> <!--slider-->
+
+            <section class="examples examples__inner white-block">
+                <ul class="examples__list">
+                    <li class="examples__li">
+                        <a href="#" class="examples__item">
+                            <picture>
+                                <source 
+                                    type="image/webp"
+                                    srcset="img/example-1.webp 1x
+                                            img/example-1-2x.webp 2x"
+                                >
+
+                                <img 
+                                src="img/example-1.jpg"
+                                srcset="img/example-1-2x.jpg 2x" 
+                                alt="example-1" 
+                                class="examples__img">
+                            </picture>
+                            
+                            <p class="examples__text">Raspberry & Cream Frozen Yogurt Pie </p>
+                            
+                            <div class="examples__props small-props">
+                                <span class="small-props__span small-props__span_time">
+                                    <svg class="sprites-clock small-props__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                                    </svg>
+                                    35mins
+                                </span>
+                                <span class="small-props__span small-props__span_comment">
+                                    <svg class="sprites-comment small-props__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#comment"></use>
+                                    </svg>
+                                    7
+                                </span>
+                                <span class="small-props__span small-props__span_view">
+                                    <svg class="sprites-view small-props__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#view"></use>
+                                    </svg>                               
+                                    14
+                                </span>
+                            </div> 
+                        </a>
+                    </li>
+
+                    <li class="examples__li">
+                        <a href="#" class="examples__item">
+                            <picture>
+                                <source 
+                                    type="image/webp"
+                                    srcset="img/example-2.webp 1x
+                                            img/example-2-2x.webp 2x"
+                                >
+
+                                <img 
+                                src="img/example-2.jpg"
+                                srcset="img/example-2-2x.jpg 2x" 
+                                alt="example-2" 
+                                class="examples__img">
+                            </picture>   
+
+                            <p class="examples__text">Giant Ice Cream Sandwich</p>
+                            
+                            <div class="examples__props small-props">
+                                <span class="small-props__span small-props__span_time">
+                                    <svg class="sprites-clock small-props__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                                    </svg>
+                                    20mins
+                                </span>
+                                <span class="small-props__span small-props__span_comment">
+                                    <svg class="sprites-comment small-props__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#comment"></use>
+                                    </svg>
+                                    4
+                                </span>
+                                <span class="small-props__span small-props__span_view">
+                                    <svg class="sprites-view small-props__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#view"></use>
+                                    </svg>                               
+                                    356
+                                </span>
+                            </div> 
+                        </a>
+                    </li>
+                    <li class="examples__li">
+                        <a href="#" class="examples__item">
+                            <picture>
+                                <source 
+                                    type="image/webp"
+                                    srcset="img/example-3.webp 1x
+                                            img/example-3-2x.webp 2x"
+                                >
+
+                                <img 
+                                src="img/example-3.jpg"
+                                srcset="img/example-3-2x.jpg 2x" 
+                                alt="example-3" 
+                                class="examples__img">
+                            </picture>
+
+                            <p class="examples__text">Dark Chocolate Crunch Ice Cream 
+                                Sandwich Cake</p>
+                            
+                            <div class="examples__props small-props">
+                                <span class="small-props__span small-props__span_time">
+                                    <svg class="sprites-clock small-props__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                                    </svg>
+                                    15mins
+                                </span>
+                                <span class="small-props__span small-props__span_comment">
+                                    <svg class="sprites-comment small-props__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#comment"></use>
+                                    </svg>
+                                    4
+                                </span>
+                                <span class="small-props__span small-props__span_view">
+                                    <svg class="sprites-view small-props__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#view"></use>
+                                    </svg>                               
+                                    167
+                                </span>
+                            </div>  
+                        </a>
+                    </li>
+                </ul>
+            </section> <!--example-->
+
+            <section class="recipe recipe__inner white-block">
+                <picture>
+                    <source 
+                        type="image/webp"
+                        srcset="img/samsa.webp 1x
+                                img/samsa-2x.webp 2x"
+                    >
+
+                    <img 
+                    src="img/samsa.jpg"
+                    srcset="img/samsa-2x.jpg 2x" 
+                    alt="samsa-photo" 
+                    class="recipe-img">
+                </picture> 
+                <div class="recipe__value">
+                    <h2 class="recipe__title">Bananas Foster Ice Cream Cake</h2>
+                    
+                    <div class="recipe__props">
+                        <span class="recipe__time">
+                            <svg class="recipe__time-icon sprite">
+                                <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                            </svg>
+                            15mins
+                        </span>
+                        
+                        <span class="recipe__difficult">Easy</span>
+
+                    </div>
+
+                    <button class="btn recipe__btn">SAVE RECIPE</button>
+
+                    <div class="recipe__text">
+                        <p class="recipe__p">1 (8 ounce) container frozen whipped topping, thawed 20 chocolate round wafers, divided 1 (7 1/4 ounce) bottle Smucker's® Hot Dark Chocolate Microwaveable Topping, divided
+                        </p>    
+    
+                        <h3 class="recipe__directions">
+                            Directions
+                        </h3>
+                        
+                        <p class="recipe__p">
+                            ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting to form an even layer. Spread with half of whipped topping. Break or crush chocolate wafers and sprinkle over the whipped cream. 
+                            Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers.
+                            TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or 
+                        </p>    
+                    </div>
+
+                </div>
+            </section> <!--recipe-->
+
+            <section class="additional-block additional-block__inner">
+                <acide class="error white-block additional-block__flex">
+                    <h2 class="error__title white-block__title">404</h2>
+
+                    <div class="error__background">
+                        <div class="error__text">
+                            <h3 class="error__title_small">Sorry</h3>
+                        
+                            <p class="error__p">WE COULDN’T FIND THE PAGE</p>
+                        </div>
+                    
+                        <button class="btn error__btn">BACK</button>
+                    </div>
+
+                </acide>
+
+                <acide class="author white-block additional-block__flex">
+                    <h2 class="author__title white-block__title">Author</h2>
+
+                    <figure class="author__figure">
+                       <picture>
+                           <source 
+                                type="image/webp"
+                                srcset="img/portrait-karen-grey.webp 1x
+                                img/portrait-karen-grey-2x.webp 2x">
+                       </picture>
+                       
+                        <img 
+                            src="img/portrait-karen-grey.jpg" 
+                            srcset="img/portrait-karen-grey-2x.jpg 2x" 
+                            alt="portrait" class="author__portrait">
+                        
+                        <figcaption class="author__about">
+                            <h3 class="author__name">Karen Gray</h3>
+
+                            <span class="author__country">United States</span>
+
+                            <ul class="author__social social">
+                                <li class="socail__li"><a href="#" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#google-plus"></use>
+                                    </svg>
+                                </a></li>
+                                <li class="social__li"><a href="#" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a></li>
+                                <li class="social__li"><a href="#" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a></li>
+                                <li class="social__li"><a href="#" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+
+                    <div class="author__review">
+                        <h4 class="author__text-title">About Lemon</h4>
+
+                        <p class="author__text">Over the fifteen-year life span of Food.com, we’ve learned that – in addition to eating – sharing is what you do best. 
+                            And thanks to the 20 million of you who come here each month, we now have 500,000 recipes to show for it, more than anywhere else in the digital universe. 
+                            We also have tons crazy-tempting photos, troves of recipe reviews and more than 2 million Facebook likes. That’s a heck of a lot of Food. Thank you!
+                        </p>
+
+                        <img src="img/caption.png" alt="caption" class="author__caption">
+                    </div>
+                </acide>
+            </section> <!--adittonal-block-->
+
+            <section class="small-blocks small-blocks__inner">
+                <h2 class="visually-hidden">small blocks</h2>
+                <div class="small-blocks__elem left-blocks">
+                    <aside class="chichi chichi__inner white-block">
+                        <h3 class="chichi__title">Chi-Chi or Chichi</h3>
+
+                        <figure class="chichi__author">
+                            <img src="img/user-portrait.jpg" alt="portrait" class="chichi__author-portrait">
+                          
+                            <figcaption class="chichi__caption">
+                                <small class="chichi__small">Recipe by</small>
+                                
+                                <h4 class="chichi__name-author">Smuckersreg Toppings</h4>
+
+                                <div class="chichi-props small-props">
+                                    <span class="small-props__span small-props__span_time">
+                                        <svg class="sprites-clock small-props__icon">
+                                            <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                                        </svg>
+                                        35mins
+                                    </span>
+                                    <span class="small-props__span small-props__span_comment">
+                                        <svg class="sprites-comment small-props__icon">
+                                            <use xlink:href="img/sprites/sprite.svg#comment"></use>
+                                        </svg>
+                                        7
+                                    </span>
+                                    <span class="small-props__span small-props__span_view">
+                                        <svg class="sprites-view small-props__icon">
+                                            <use xlink:href="img/sprites/sprite.svg#view"></use>
+                                        </svg>                               
+                                        14
+                                    </span>
+                                </div> 
+                            </figcaption>
+                        </figure>
+                        <img src="img/chi-chi-photo.jpg" alt="chi-chi-photo">
+                    </aside>
+
+                    <aside class="target target__inner white-block white-block_small">
+                        <div class="white-block__header">
+                            <h3 class="white-block__title">Target</h3>
+
+                            <ul class="white-block__props">
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#print"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#email"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>    
+
+                        <div class="target__input presentation-line">
+                            <h4 class="target__presentation">Presentation line</h4>
+
+                            <ul class="target__ul">
+                                <li class="target__li">
+                                    <h4 class="target__text-title">Housewives</h4>
+                                    <p class="target__text">Lorem ipsum dolor sit amet, prima ceteros.</p>
+                                </li>
+                                <li class="target__li">
+                                    <h4 class="target__text-title">Newlyweds</h4>
+                                   <p class="target__text">Has brute elitr deserunt ea, assentior eloquentiam neglegentur te sed.</p>
+                                </li>
+                                <li class="target__li">
+                                    <h4 class="target__text-title">Business lady</h4>
+                                    <p class="target__text">Ei nam primis putent signiferumque.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+         
+                <div class="small-blocks__elem center-blocks">
+                    <aside class="recipe-small white-block white-block_small">
+                        <div class="white-block__header">
+                            <h3 class="recipe-small__title white-block__title">Recipe</h3>
+
+                            <ul class="white-block__props">
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#print"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#email"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>    
+
+                        <ul class="difficulty">
+                            <li class="difficulty__item"><a href="#" class="difficulty__a">EASY</a></li>
+                            <li class="difficulty__item"><a href="#" class="difficulty__a">MIDDLE</a></li>
+                            <li class="ifficulty__item"><a href="#" class="difficulty__a">LONG</a></li>                       
+                        </ul>
+
+                        <ul class="recipe-small__list">
+                            <li class="recipe-small__item">
+                                <figure class="recipe-small__figure">
+                                    <img src="img/example-1.jpg" alt="" class="recipe-small__img">
+                                    <figcaption class="recipe-small__text">
+                                        <h4 class="recipe-small__text-title">Smuckersreg Toppings</h4>
+                                        <p class="recipe-small__text-p">Thanks for the recipe lorem ipsum bla bla bla Thanks for the recipe lore</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="recipe-small__item">
+                                <figure class="recipe-small__figure">
+                                    <img src="img/example-2.jpg" alt="" class="recipe-small__img">
+                                    <figcaption class="recipe__text">
+                                        <h4 class="recipe-small__text-title">Smuckersreg Toppings</h4>
+                                        <p class="recipe-small__text-p">Thanks for the recipe lorem nks for the recipe</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="recipe-small__item">
+                                <figure class="recipe-small__figure">
+                                    <img src="img/example-3.jpg" alt="" class="recipe-small__img">
+                                    <figcaption class="recipe-small__text">
+                                        <h4 class="recipe-small__text-title">Smuckersreg Toppings</h4>
+                                        <p class="recipe-small__text-p">Thanks for the recipe lorem nks for the recipe</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        
+                        <button class="btn recipe-small__btn">VIEW MORE</button>
+                    </aside>
+
+                    <aside class="tags tags__inner white-block white-block_small">
+                        <div class="white-block__header">
+                            <h3 class="white-block__title tags__title">Tags</h3>
+                        </div>
+                        
+                        <ul class="tags__list">
+                            <li class="tags__li"><a href="#" class="tags__item">#yummy</a></li>
+                            <li class="tags__li"><a href="#" class="tags__item">#sweet</a></li>
+                            <li class="tags__li"><a href="#" class="tags__item">#dinner</a></li>
+                            <li class="tags__li"><a href="#" class="tags__item">#lunch</a></li>
+                            <li class="tags__li"><a href="#" class="tags__item">#breakfast</a></li>
+                            <li class="tags__li"><a href="#" class="tags__item">#fresh</a></li>
+                            <li class="tags__li"><a href="#" class="tags__item">#tasty</a></li>
+                            <li class="tags__li"><a href="#" class="tags__item">#delish</a></li>
+                            <li class="tags__li"><a href="#" class="tags__item">#delicious</a></li>
+                            <li class="tags__li"><a href="#" class="tags__item">#eating</a></li>
+                            <li class="tags__li"><a href="#" class="tags__item">#food</a></li>
+                        </ul>
+                    </aside>
+
+                </div>
+
+                <div class="small-blocks__elem right-blocks">
+                    <aside class="popular-now white-block">
+                        <div class="popular-now__content">
+                        <h3 class="popular-now__title">Popular now</h3>
+                            <div class="popular-now__info">
+                                <h4 class="popular-now__title-small">Vanilla Frozen Coffee</h4>
+
+                                <p class="popular-now__text">Mix coffee, sugar and creamer. Pour into blender and add ice cubes. Blend until smoot</p>
+                                
+                                <button class="btn popular-now__btn">GET IT RECIPE</button>
+
+                                <div class="popular-now__props small-props">
+                                    <span class="small-props__span small-props__span_time">
+                                        <svg class="sprites-clock small-props__icon">
+                                            <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                                        </svg>
+                                        6mins
+                                    </span>
+                                    <span class="small-props__span small-props__span_comment">
+                                        <svg class="sprites-comment small-props__icon">
+                                            <use xlink:href="img/sprites/sprite.svg#comment"></use>
+                                        </svg>
+                                        240
+                                    </span>
+                                    <span class="small-props__span small-props__span_view">
+                                        <svg class="sprites-view small-props__icon">
+                                            <use xlink:href="img/sprites/sprite.svg#view"></use>
+                                        </svg>                               
+                                        400
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside class="timeline timeline__inner white-block white-block_small">
+                        <div class="white-block__header">
+                            <h3 class="white-block__title">Timeline</h3>
+
+                            <ul class="white-block__props">
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#print"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#email"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="white-block__li">
+                                    <a href="#" class="white-block__link">
+                                        <svg class="white-block__icons">
+                                            <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>    
+
+                        <div class="timeline__content">
+                            <h4 class="timeline__title-small">Timeline</h4>
+
+                            <ul class="timeline__list">
+                                <li class="timeline__li">
+                                    <p class="timeline__lvl">EASY</p>
+                                    <span class="timeline__time timeline__time_blue">15mins</span>
+                                </li>
+                                <li class="timeline__li">
+                                    <p class="timeline__lvl">MIDDLE</p>
+                                    <span class="timeline__time timeline__time_turquoise">25mins</span>
+                                </li>
+                                <li class="timeline__li">
+                                    <p class="timeline__lvl">LONG</p>
+                                    <span class="timeline__time timeline__time_red">40mins</span>
+                                </li>
+                            </ul>
+
+                            <p class="timeline__text">Eam adhuc iudico percipitur ex, ut malis audire voluptaria has.</p>
+                        </div>
+                    </aside>
+                </div>
+            </section><!--small-blocks-->
+
+            <section class="account account__inner">
+                <h2 class="visually-hidden">Account block</h2>
+                <div class="login white-block white-block_small account__el">
+                    <h3 class="white-block__title">Login</h3>
+
+                    <form class="account__content">
+                        <h4 class="login__title-small account__title">Login for LEMON</h4>
+                        <ul>
+                            <li class="account__list">
+                                <input type="text" class="lemon-input login__login-name" placeholder="email or login">
+                            </li>
+                            
+                            <li class="account__list">
+                                <input type="password" class="lemon-input login__login-password" placeholder="password">
+                            </li>
+                        </ul>
+                        
+                        <div class="account__links">
+                            <input type="checkbox" id="rememberMe" class="account__checkbox">
+                            <label for="rememberMe" class="account__checkbox-label">Remember me</label>
+    
+                            <a href="#" class="account__forget-link">Forgot the password?</a>
+                        </div>
+
+                        
+                        <button class="btn account__btn" type="submit">login</button>
+
+                        <ul class="account__social social">
+                            <li class="social__li"><a href="#" class="social__link">
+                                <svg class="social__icon social__icon_grey">
+                                    <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                                </svg>
+                            </a></li>
+                            <li class="social__li"><a href="#" class="social__link">
+                                <svg class="social__icon social__icon_grey">
+                                    <use xlink:href="img/sprites/sprite.svg#google-plus"></use>
+                                </svg>
+                            </a></li>
+                        </ul>
+
+                        <a href="#" class="account__foreword">Don’t have an accont? Sign in</a>
+                    </form>
+                </div>
+
+                <div class="sign-in account__el white-block white-block_small account__el account__el_left">
+                    <h3 class="white-block__title">Sign it</h3>
+
+                    <form class="account__content">
+                        <h4 class="account__title">Sign for LEMON</h4>
+
+                        <ul>
+                            <li class="account__list">
+                                <input type="email" class="lemon-input" placeholder="email">
+                            </li>
+                            <li class="account__list">
+                                <input type="text" class="lemon-input" placeholder="user name">
+                            </li>
+                            <li class="account__list">
+                                <input type="password" class="lemon-input" placeholder="password">
+                            </li>
+                            <li class="account__list">
+                                <input type="password" class="lemon-input" placeholder="reapet password">
+                            </li>
+                        </ul>
+
+                        <button class="btn account__btn">sign up</button>
+
+                        <ul class="account__social social">
+                            <li class="social__li"><a href="#" class="social__link">
+                                <svg class="social__icon social__icon_grey">
+                                    <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                                </svg>
+                            </a></li>
+                            <li class="social__li"><a href="#" class="social__link">
+                                <svg class="social__icon social__icon_grey">
+                                    <use xlink:href="img/sprites/sprite.svg#google-plus"></use>
+                                </svg>
+                            </a></li>
+                        </ul>
+
+                        <a href="#" class="account__foreword">By joining LEMON, you agree to our 
+                            Terms of Service</a>
+                    </form>
+                </div>
+            </section> <!--account-->
+
+            <section class="comments-block comments-block__inner">
+                <h2 class="comments-block__title visually-hidden">Comments block</h2>
+
+                <div class="post-a-comment white-block">
+                    <h3 class=" white-block__title post-a-comment__title">Post a Comment</h3>
+
+                    <ul class="post-a-comment__links">
+                        <li>
+                            <a href="#" class="post-a-comment__link post-a-comment__link_fb">Facebook<a>
+
+                        </li>
+                        <li>
+                            <a href="#" class="post-a-comment__link">Twitter</a>
+                        </li>
+                    </ul>
+
+                    <form class="post-a-comment__form">
+                        <img src="img/user-portrait.jpg" alt="portrait" class="portrait post-a-comment__portrait">
+                        
+                        <input type="text" class="lemon-input post-a-comment__input">
+
+                        <button class="btn post-a-comment__btn">post</button>
+                    </form>
+                </div>
+
+                <div class="comments comments__inner white-block">
+                    <h3 class="white-block__title comments__title">Comments</h3>
+
+                    <ul class="comments__ul post-list">
+                        <li class="comments__elem post-list__elem">
+                            <div class="post">
+                                <figure class="post__figure">
+                                    <img src="img/user-portrait.jpg" alt="portrait" class="portrait post__portrait">
+
+
+                                    <figcaption class="post__info">
+                                        <span class="post__by">post by</span>
+                                        <h4 class="post__title">Smuckersreg Toppings</h4>
+                                        <span class="post__date">6/10/2014</span>
+                                    </figcaption>
+                                </figure>
+
+                                <div class="post__props">
+                                    <div class="post__props-share">
+                                        <span class="post__props-text">456</span>
+                                        <button class="post__btn">
+                                            <svg class="post__props-icon">
+                                                <use xlink:href="img/sprites/sprite.svg#share"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="post__props-like">
+                                        <span class="post__props-text">15</span>
+                                        <button class="post__btn">
+                                            <svg class="post__props-icon">
+                                                <use xlink:href="img/sprites/sprite.svg#like"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="post__inner">
+                                    <img src="img/example-1.jpg" alt="picture-post" class="post__img">
+                                    <span class="post__text">Thanks for the recipe</span>
+                                </div>
+                            </div>
+
+
+
+                        </li>
+                        <li class="comments__elem post-list__elem">
+                            <div class="post">
+                                <figure class="post__figure">
+                                    <img src="img/user-portrait.jpg" alt="portrait" class="portrait post__portrait">
+
+
+                                    <figcaption class="post__info">
+                                        <span class="post__by">post by</span>
+                                        <h4 class="post__title">Smuckersreg Toppings</h4>
+                                        <span class="post__date">6/10/2014</span>
+                                    </figcaption>
+                                </figure>
+
+                                <div class="post__props">
+                                    <div class="post__props-share">
+                                        <span class="post__props-text">456</span>
+                                        <button class="post__btn">
+                                            <svg class="post__props-icon">
+                                                <use xlink:href="img/sprites/sprite.svg#share"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="post__props-like">
+                                        <span class="post__props-text">15</span>
+                                        <button class="post__btn">
+                                            <svg class="post__props-icon">
+                                                <use xlink:href="img/sprites/sprite.svg#like"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="post__inner">
+                                    <span class="post__text">Thanks for the recipe lorem ipsum bla bla bla  Thanks for the recipe lore</span>
+                                </div>
+                            </div>    
+                        </li>
+                    
+                        <li class="comments__elem post-list__elem">
+                            <div class="post">
+                                <figure class="post__figure">
+                                    <img src="img/user-portrait.jpg" alt="portrait" class="portrait post__portrait">
+
+
+                                    <figcaption class="post__info">
+                                        <span class="post__by">post by</span>
+                                        <h4 class="post__title">Smuckersreg Toppings</h4>
+                                        <span class="post__date">6/10/2014</span>
+                                    </figcaption>
+                                </figure>
+
+                                <div class="post__props">
+                                    <div class="post__props-share">
+                                        <span class="post__props-text">456</span>
+                                        <button class="post__btn">
+                                            <svg class="post__props-icon">
+                                                <use xlink:href="img/sprites/sprite.svg#share"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="post__props-like">
+                                        <span class="post__props-text">15</span>
+                                        <button class="post__btn">
+                                            <svg class="post__props-icon">
+                                                <use xlink:href="img/sprites/sprite.svg#like"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="post__inner">
+                                    <span class="post__text">Thanks for the recipe</span>
+                                </div>
+                            </div>    
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pages white-block">
+                    <h2 class="visually-hidden">comments-pages</h2>
+
+                    <ul class="pages__list">
+                        <li class="pages__li"><a href="#" class="pages__item">&#60;</a></li>
+                        <li class="pages__li"><a href="#" class="pages__item">1</a></li>
+                        <li class="pages__li"><a href="#" class="pages__item">2</a></li>
+                        <li class="pages__li"><a href="#" class="pages__item">3</a></li>
+                        <li class="pages__li"><a href="#" class="pages__item">4</a></li>
+                        <li class="pages__li"><a href="#" class="pages__item">5</a></li>
+                        <li class="pages__li"><a href="#" class="pages__item">6</a></li>
+                        <li class="pages__li"><a href="#" class="pages__item">&#62;</a></li>
+                    </ul>
+                </div>
+            </section> <!--comments-block-->
+        </main>   
+        
+        <footer class="footer">
+            <div class="footer__inner">
+                <nav class="nav nav__footer">
+                    <img src="img/logo-white.png" alt="logo" class="nav__logo nav__logo_footer">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link_dark">HOME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link_dark">RECIPES</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link_dark">PHOTO GALERIES</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link_dark">VIDEOS</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link_dark">ALL CATEGORIES</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="footer__right-block">
+                    <p class="footer__text">© 2016-2017 LEMON. All right reserved</p>
+
+                    <ul class="footer__links social ">
+                        <li class="socail__li"><a href="#" class="social__link">
+                            <svg class="social__icon social__icon_dark">
+                                <use xlink:href="img/sprites/sprite.svg#google-plus"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social__li"><a href="#" class="social__link">
+                            <svg class="social__icon social__icon_dark">
+                                <use xlink:href="img/sprites/sprite.svg#twitter"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social__li"><a href="#" class="social__link">
+                            <svg class="social__icon social__icon_dark">
+                                <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social__li"><a href="#" class="social__link">
+                            <svg class="social__icon social__icon_dark">
+                                <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

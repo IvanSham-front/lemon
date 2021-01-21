@@ -1,0 +1,16 @@
+.lemon-input {
+    display: inline-block;
+    margin: 0 auto;
+    width: 265px;
+    height: 37px;
+    border: 1px solid $lightGrey;
+    padding: 17px 12px;
+    font-family: $Josefin;
+    color: $black;
+    font-style: italic;
+    &:active, &:focus {
+        outline: none;
+        box-shadow: 13px 14px 15px -10px $lightGrey inset;;
+    }
+
+}

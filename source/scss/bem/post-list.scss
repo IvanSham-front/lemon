@@ -1,0 +1,7 @@
+.post-list {
+    @include flex-box(column nowrap, space-between);
+}
+
+.post-list__elem {
+    padding-top: 25px;
+}
